@@ -1,0 +1,35 @@
+pandas
+numpy
+scikit-learn
+mlflow
+dvc
+fastapi
+uvicorn
+evidently
+transformers
+torch
+jupyter
+EOFmkdir data notebooks src models && touch requirements.txt .gitignore && cat > requirements.txt << 'EOF'
+pandas
+numpy
+scikit-learn
+mlflow
+dvc
+fastapi
+uvicorn
+evidently
+transformers
+torch
+jupyter
+EOFmkdir data notebooks src models && touch requirements.txt .gitignore && cat > requirements.txt << 'EOF'
+pandas
+numpy
+scikit-learn
+mlflow
+dvc
+fastapi
+uvicorn
+evidently
+transformers
+torch
+jupyter
