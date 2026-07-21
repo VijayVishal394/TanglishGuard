@@ -2,7 +2,11 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import pickle
 
-app = FastAPI()
+app = FastAPI(
+    title="TanglishGuard",
+    version="1.0.0",
+    description="TanglishGuard - Tanglish Offensive Language Detection API"
+)
 
 model = pickle.load(open('models/model.pkl', 'rb'))
 vectorizer = pickle.load(open('models/vectorizer.pkl', 'rb'))
@@ -19,3 +23,6 @@ def predict(input: TextInput):
 @app.get("/")
 def root():
     return {"message": "TanglishGuard API is running"}
+@app.get("/health")
+def health_check():
+    return {"status": "healthy"}
