@@ -24,3 +24,7 @@ jobs:
       - name: Check app imports
         run: |
           python -c "from src.app import app"
+
+      - name: Run tests
+        run: |
+          pytest
